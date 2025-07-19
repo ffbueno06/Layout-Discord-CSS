@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans";
+    color: white;
+}
+
+header {
+    background-image: url(Header\ Background.svg);
+    background-position: center;
+}
+
+header .container {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+    flex-direction: column;
+    padding: 27px;
+}
+
+header .container h1 {
+    font-family: "Luckiest Guy";
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+
+.buttons button {
+    height: 52px;
+    border-radius: 20px;
+    border: none;
+}
+
+.buttons button p {
+    font-size: 16px;
+}
+
+#preto {
+    color: white;
+    background-color: rgba(35, 39, 42, 1);
+}
+
+main {
+    color: black;
+}
+
+main section {
+    padding: 40px 24px;
+}
+
+main section .container-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+main section .info {
+    color: rgb(35, 39, 42, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+main section .info .text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main section h2 {
+    font-weight: 900;
+}
+
+main section .img {
+    width: 100%;
+    text-align: center;
+}
+
+main section .img img {
+    max-width: 100%;
+}
+
+main section .container-2 #section-02 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#section-02 .container-2 {
+    flex-direction: column-reverse;
+}
+
+main #section-02, #section-04 {
+    background-color: rgba(246, 246, 246, 1);
+}
+
+main #section-04 h2 {
+    text-transform: uppercase;
+    font-family: "Luckiest guy";
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+footer {
+    background: rgba(35, 39, 42, 1);
+    height: 140px;
+    background-image: url(/assets/discord.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media screen and (min-width: 920px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+
+    header {
+        background-size: cover;
+    }
+    
+    header .container {
+        width: 70%;
+        text-align: center;
+    }
+
+    header .container h1 {
+        font-size: 50px;
+        letter-spacing: 2px;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .container .buttons {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    header .container .buttons button {
+        width: 60%;
+    }
+
+    main section .container-2 {
+        flex-direction: row;
+        width: 100%;
+        padding: 0 94px;
+    }
+
+    main section .container-2 .img {
+        width: 75%;
+    }
+    
+    main section .container-2 .img img {
+        min-width: 650px;
+    }
+
+    main section .container-2 .info {
+        width: 70%;
+        justify-content: space-around;
+    }
+
+    main section .container-2 .info h2 {
+        font-size: calc(1.1rem + 2vw);
+    }
+
+    main section h2 {
+        display: block;
+    }
+
+    main section p {
+        display: block;
+    }
+
+    #section-02 .container-2 {
+        flex-direction: row;
+    }
+
+    #section-04 .container-2 {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    #section-04 .info .text h2 {
+        font-size: calc(1.5rem + 3vw);
+        text-align: center;
+    }
+
+    #section-04 .container-2 img {
+        width: 30%;
+    }
+
+    #section-04 .container-2 .img img {
+        width: 100%;
+    }
+}
